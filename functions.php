@@ -3,7 +3,7 @@ require ('conf.php');
 
 // tagastab isAdmin session
 function isAdmin(){
-    return $_SESSION['onAdmin'] ==1;
+    return isset($_SESSION['onAdmin'])&&$_SESSION['onAdmin'];
 }
 
 //sorteerimine
